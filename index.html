@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Statik Site</title>
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --secondary: #2A2A2A;
+            --text: #ffffff;
+            --bg: #121212;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%);
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #FF3366, #6C63FF, #00C6FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 5s ease infinite;
+            background-size: 300% 300%;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            color: #aaa;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(108, 99, 255, 0.4);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--secondary);
+            padding: 40px;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+            border: 1px solid #333;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        /* Animations */
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 50px;
+            background: #000;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Geleceği Tasarla</h1>
+            <p>Sadece HTML ve CSS kullanarak oluşturulmuş, modern, hızlı ve etkileyici bir statik web sitesi deneyimi.</p>
+            <a href="#features" class="btn">Keşfetmeye Başla</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="card">
+            <h3>Hızlı & Hafif</h3>
+            <p>Gereksiz JavaScript kütüphaneleri olmadan, saf HTML ve CSS gücüyle ışık hızında yüklenen sayfalar.</p>
+        </div>
+        <div class="card">
+            <h3>Modern Tasarım</h3>
+            <p>Göz alıcı gradyanlar, yumuşak geçişler ve karanlık mod uyumlu renk paleti ile estetik görünüm.</p>
+        </div>
+        <div class="card">
+            <h3>Tam Duyarlı</h3>
+            <p>Mobil, tablet ve masaüstü cihazlarda kusursuz görünen esnek grid yapısı.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Statik Web Tasarımı. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
