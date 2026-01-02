@@ -1,0 +1,2 @@
+# statikHTMLsite
+statik web sitesi
