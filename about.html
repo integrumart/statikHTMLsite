@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Corporate Solutions">
+    <title>About Us - Corporate Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Corporate Solutions</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Learn more about our company and mission</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-intro">
+                    <h3>Who We Are</h3>
+                    <p>Corporate Solutions is a leading provider of professional business services, dedicated to helping organizations achieve their strategic goals. With over 15 years of experience in the industry, we have built a reputation for excellence, innovation, and client satisfaction.</p>
+                    <p>Our team of experts brings together diverse skills and knowledge to deliver comprehensive solutions tailored to meet the unique needs of each client. We pride ourselves on our commitment to quality, integrity, and continuous improvement.</p>
+                </div>
+
+                <div class="mission-vision">
+                    <div class="mission-vision-card">
+                        <h3>Our Mission</h3>
+                        <p>To empower businesses with innovative solutions and expert guidance that drive growth, efficiency, and long-term success. We strive to be the trusted partner that organizations rely on to navigate challenges and seize opportunities in an ever-changing business landscape.</p>
+                    </div>
+                    <div class="mission-vision-card">
+                        <h3>Our Vision</h3>
+                        <p>To be recognized as the premier provider of corporate solutions, known for our exceptional service, innovative approach, and measurable impact on our clients' success. We envision a future where every business has access to world-class professional services.</p>
+                    </div>
+                </div>
+
+                <div class="values-section">
+                    <h3>Our Core Values</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <h4>Excellence</h4>
+                            <p>We pursue the highest standards in everything we do, continuously improving our services and processes.</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Integrity</h4>
+                            <p>We operate with honesty, transparency, and ethical principles in all our business relationships.</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Innovation</h4>
+                            <p>We embrace new ideas and technologies to deliver cutting-edge solutions for our clients.</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Collaboration</h4>
+                            <p>We work closely with our clients and partners to achieve shared goals and mutual success.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h3>Our Leadership Team</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-placeholder">👤</div>
+                            <h4>John Anderson</h4>
+                            <p class="member-title">Chief Executive Officer</p>
+                            <p>20+ years of experience in business strategy and management.</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-placeholder">👤</div>
+                            <h4>Sarah Mitchell</h4>
+                            <p class="member-title">Chief Operations Officer</p>
+                            <p>Expert in operational excellence and process optimization.</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-placeholder">👤</div>
+                            <h4>Michael Chen</h4>
+                            <p class="member-title">Chief Technology Officer</p>
+                            <p>Leading technology innovation and digital transformation initiatives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Corporate Solutions</h3>
+                    <p>Leading provider of professional business services and solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@corporatesolutions.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Business St, Suite 100</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Corporate Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

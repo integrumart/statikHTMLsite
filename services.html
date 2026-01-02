@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our professional business services">
+    <title>Services - Corporate Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Corporate Solutions</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions tailored to your business needs</p>
+            </div>
+        </section>
+
+        <section class="services-content">
+            <div class="container">
+                <div class="services-intro">
+                    <p>At Corporate Solutions, we offer a wide range of professional services designed to help your business thrive in today's competitive marketplace. Our expert team delivers customized solutions that address your unique challenges and opportunities.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">💼</div>
+                        <h3>Business Consulting</h3>
+                        <p>Strategic guidance to optimize your operations, improve efficiency, and drive sustainable growth. Our consultants work closely with you to identify opportunities and implement effective solutions.</p>
+                        <ul class="service-features">
+                            <li>Strategic Planning</li>
+                            <li>Process Optimization</li>
+                            <li>Change Management</li>
+                            <li>Performance Analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">📈</div>
+                        <h3>Financial Services</h3>
+                        <p>Expert financial advice and planning to ensure your business remains profitable and financially healthy. We provide comprehensive financial solutions tailored to your specific needs.</p>
+                        <ul class="service-features">
+                            <li>Financial Planning</li>
+                            <li>Risk Management</li>
+                            <li>Investment Strategy</li>
+                            <li>Budget Analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3>Marketing Solutions</h3>
+                        <p>Data-driven marketing strategies that help you reach your target audience and achieve your business objectives. From brand development to digital campaigns, we've got you covered.</p>
+                        <ul class="service-features">
+                            <li>Brand Strategy</li>
+                            <li>Digital Marketing</li>
+                            <li>Market Research</li>
+                            <li>Content Creation</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Technology Solutions</h3>
+                        <p>Modern technology solutions to streamline your operations and enhance productivity. We help businesses leverage technology for competitive advantage.</p>
+                        <ul class="service-features">
+                            <li>IT Consulting</li>
+                            <li>Software Development</li>
+                            <li>System Integration</li>
+                            <li>Cloud Solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">👥</div>
+                        <h3>Human Resources</h3>
+                        <p>Comprehensive HR solutions to attract, develop, and retain top talent. We help you build a strong organizational culture and effective HR processes.</p>
+                        <ul class="service-features">
+                            <li>Talent Acquisition</li>
+                            <li>Training & Development</li>
+                            <li>Performance Management</li>
+                            <li>HR Compliance</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">⚖️</div>
+                        <h3>Legal & Compliance</h3>
+                        <p>Expert legal guidance to ensure your business operates in compliance with all relevant regulations and protect your interests in business transactions.</p>
+                        <ul class="service-features">
+                            <li>Contract Review</li>
+                            <li>Regulatory Compliance</li>
+                            <li>Risk Assessment</li>
+                            <li>Legal Advisory</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h3>Ready to Get Started?</h3>
+                    <p>Contact us today to learn how our services can benefit your business</p>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Corporate Solutions</h3>
+                    <p>Leading provider of professional business services and solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@corporatesolutions.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Business St, Suite 100</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Corporate Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
