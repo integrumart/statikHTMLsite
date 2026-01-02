@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern ve şık statik web sitesi">
+    <title>Modern Web Sitesi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <h2>ModernSite</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+                <li><a href="#services" class="nav-link">Hizmetler</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolyo</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Tema Değiştir">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menü">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title animate-fade-in">Hoş Geldiniz</h1>
+            <p class="hero-subtitle animate-fade-in">Modern ve Gösterişli Bir Dijital Deneyim</p>
+            <a href="#about" class="btn btn-primary animate-fade-in">Keşfet</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Hakkımızda</h2>
+            <div class="about-content">
+                <div class="about-text scroll-animate">
+                    <p>Modern web teknolojileri ile oluşturulmuş, kullanıcı deneyimini ön planda tutan bir dijital platform sunuyoruz. Her detayda mükemmellik arayışıyla hareket ediyor, en son tasarım trendlerini projelerimize yansıtıyoruz.</p>
+                    <p>Yenilikçi çözümler ve estetik tasarımlar ile markanızı dijital dünyada öne çıkarıyoruz. Responsive tasarım prensiplerine bağlı kalarak, tüm cihazlarda kusursuz bir deneyim sunuyoruz.</p>
+                </div>
+                <div class="about-image scroll-animate">
+                    <div class="image-placeholder">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Hizmetlerimiz</h2>
+            <div class="services-grid">
+                <div class="service-card scroll-animate">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Web Tasarım</h3>
+                    <p>Modern ve estetik web tasarımları ile markanızı dijital dünyada öne çıkarın.</p>
+                </div>
+                <div class="service-card scroll-animate">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Geliştirme</h3>
+                    <p>En son teknolojiler kullanarak performanslı ve güvenli web uygulamaları geliştiriyoruz.</p>
+                </div>
+                <div class="service-card scroll-animate">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Tasarım</h3>
+                    <p>Tüm cihazlarda mükemmel görünen, kullanıcı dostu arayüzler tasarlıyoruz.</p>
+                </div>
+                <div class="service-card scroll-animate">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimizasyonu</h3>
+                    <p>Arama motorlarında üst sıralarda yer almanız için SEO stratejileri uyguluyoruz.</p>
+                </div>
+                <div class="service-card scroll-animate">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performans Analizi</h3>
+                    <p>Web sitenizin performansını analiz ediyor ve optimize ediyoruz.</p>
+                </div>
+                <div class="service-card scroll-animate">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>7/24 Destek</h3>
+                    <p>Her zaman yanınızdayız. Teknik destek ve danışmanlık hizmetlerimizden yararlanın.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Portfolyo</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item scroll-animate">
+                    <div class="portfolio-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Proje 1</h3>
+                        <p>Web Tasarım</p>
+                    </div>
+                </div>
+                <div class="portfolio-item scroll-animate">
+                    <div class="portfolio-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Proje 2</h3>
+                        <p>E-Ticaret</p>
+                    </div>
+                </div>
+                <div class="portfolio-item scroll-animate">
+                    <div class="portfolio-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Proje 3</h3>
+                        <p>Mobil Uygulama</p>
+                    </div>
+                </div>
+                <div class="portfolio-item scroll-animate">
+                    <div class="portfolio-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Proje 4</h3>
+                        <p>Kurumsal Web</p>
+                    </div>
+                </div>
+                <div class="portfolio-item scroll-animate">
+                    <div class="portfolio-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Proje 5</h3>
+                        <p>Blog Tasarımı</p>
+                    </div>
+                </div>
+                <div class="portfolio-item scroll-animate">
+                    <div class="portfolio-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Proje 6</h3>
+                        <p>Landing Page</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title scroll-animate">İletişim</h2>
+            <div class="contact-content">
+                <div class="contact-info scroll-animate">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adres</h4>
+                            <p>İstanbul, Türkiye</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+90 (212) 555 0000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-posta</h4>
+                            <p>info@modernsite.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form scroll-animate" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Adınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-posta Adresiniz" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Konu" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Mesajınız" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ModernSite</h3>
+                    <p>Modern web çözümleriyle dijital dünyanızı şekillendiriyoruz.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#hero">Ana Sayfa</a></li>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#services">Hizmetler</a></li>
+                        <li><a href="#portfolio">Portfolyo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ModernSite. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Yukarı Çık">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
